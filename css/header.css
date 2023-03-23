@@ -1,0 +1,69 @@
+header {
+    margin-top: 5px;
+    height: 14vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Orbitron';
+    
+    writing-mode: vertical-lr;
+    font-size: 4.5vh;
+    transform: rotate(180deg);
+}
+
+.header-container {
+    height: 100%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-right: -20px solid #333;
+    background-color: var(--message-frame);
+    border: solid 1px var(--accent);
+    border-radius: 0 10px 10px 0;
+
+    overflow: hidden;
+}
+
+.logo {
+    height: 100%;
+}
+
+
+
+/* Header Items */
+.header-items {
+    width: 100%;
+    margin: 0;
+
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.header-item {
+    display: inline;
+}
+
+.header-item:hover {
+    padding: 5px 10px 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+    color: azure;
+    display: block;
+}
+
+.header-item:hover .item-logo {
+    display: block;
+}
+
+.item-logo {
+    display: none;
+    height: 4vh;
+    border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../src/font/Orbitron.ttf');
+}
+
+@font-face {
+    font-family: 'Oxigen';
+    src: url('../src/font/Oxygen-Regular.ttf');
+}
+
+:root {
+    --accent: #bd62c9;
+    --background: #28222a;
+    --font-color: #ecfffe;
+    --message-bg: rgba(34, 34, 34, 0.795);
+    --message-frame: rgb(27, 27, 27);
+}
+
+
+* {
+    color: azure;
+
+    font-size: large;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition: ease-out .1s;
+}
+
+body {
+    font-family: 'Oxigen', sans-serif;
+    background: var(--background);
+
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    opacity: 0.5;
+    filter: blur(5px);
+    position: fixed;
+    justify-self: center;
+    right: -25%;
+    left: -25%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
