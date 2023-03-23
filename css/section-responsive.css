@@ -1,0 +1,8 @@
+@media screen and (max-width: 620px) {
+    section {
+        margin-top: 6vh;
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+}

@@ -5,11 +5,18 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    /* Avoid selection in header */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    z-index: 999;
 }
 
 .name {
     font-family: 'Orbitron';
-    
+
     writing-mode: vertical-lr;
     font-size: 4.5vh;
     transform: rotate(180deg);
@@ -36,34 +43,60 @@ header {
 }
 
 
-
 /* Header Items */
 .header-items {
-    width: 100%;
-    margin: 0;
+    width: fit-content;
+
+    display: block;
+    justify-content: space-around;
+    align-items: center;
 
     border-radius: 10px;
-    padding: 2vh;
+    margin-left: 10px;
+    padding: 0;
 }
 
 .header-item {
     display: inline;
-}
-
-.header-item:hover {
-    padding: 5px 10px 5px;
-    background-color: var(--accent);
-    border-radius: 10px;
-    color: azure;
-    display: block;
-}
-
-.header-item:hover .item-logo {
-    display: block;
+    padding: 5px;
 }
 
 .item-logo {
     display: none;
     height: 4vh;
     border-radius: 50%;
+}
+
+
+/* Hover Thingys */
+.header-item:hover {
+    display: block;
+    width: 98%;
+
+    background-color: var(--accent);
+    border-radius: 10px;
+    color: azure;
+}
+
+.header-item:hover .item-logo {
+    display: block;
+}
+
+.header-items:hover .header-item:not(:hover) {
+    font-size: small;
+    opacity: 0.7;
+}
+
+.header-items:hover{
+    width: 100%;
+    transition: 0s;
+}
+
+/* Click effect */
+.link-button {
+    position: relative;
+    top: 0px;
+}
+.link-button:active {
+    top: 5px;
 }

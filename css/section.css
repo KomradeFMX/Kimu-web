@@ -1,0 +1,42 @@
+section {
+    margin-top: 6vh;
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5.5vh;
+    width: 80%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--message-bg);
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.about-me-frame {
+    height: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--message-frame);
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.pfp {
+    height: 10rem;
+    width: 10rem;
+
+    border-radius: 10px;
+    border: 2px solid #cbe499;
+}
