@@ -14,7 +14,7 @@ header {
     z-index: 999;
 }
 
-.name {
+.vertical-name {
     font-family: 'Orbitron';
 
     writing-mode: vertical-lr;

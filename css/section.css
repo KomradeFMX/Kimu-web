@@ -33,10 +33,22 @@ section {
     user-select: none; /* Standard syntax */
 }
 
-.pfp {
-    height: 10rem;
-    width: 10rem;
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    border-radius: 10px;
-    border: 2px solid #cbe499;
+.info-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+.info-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
 }
